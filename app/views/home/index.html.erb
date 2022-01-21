@@ -1,0 +1,15 @@
+<h1>Projetos disponíveis em Freelancer</h1>
+
+
+<% @projects.each do |p| %>
+<div>
+    <h2><%= p.title %></h2>
+    - Descrição: <%= p.description %><br>
+    - Habilidades buscadas: <%= p.skills %><br>
+    - Valor por hora: <%= p.hour_value %><br>
+    - Data limite: <%= p.date_limit %><br>
+    - Regime de trabalho: <%= p.work_regimen %><br>
+    - Vagas: <%= p.status %><br>
+    - Email do dono: <%= p.user %><br>
+</div>
+<% end %> 
